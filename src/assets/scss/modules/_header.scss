@@ -1,0 +1,18 @@
+.header {
+  &__logo {
+    a {
+      display: flex;
+      text-decoration: none;
+    }
+    img {
+      margin-right: 0.5rem;
+      width: 2.6rem;
+    }
+
+    a > h1 {
+      font-family: $font-heading;
+      font-size: 2.3rem;
+      color: $color-text;
+    }
+  }
+}

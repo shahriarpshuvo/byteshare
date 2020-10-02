@@ -1,0 +1,24 @@
+{
+  "name": "byteshare",
+  "version": "1.0.0",
+  "description": "ByteShare allows you to upload file and give you a shareable link for download the file within the next 24 hrs.",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-spShuvo/byteshare.git"
+  },
+  "author": "Md. Shahriar Parvez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-spShuvo/byteshare/issues"
+  },
+  "homepage": "https://github.com/Mr-spShuvo/byteshare#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  }
+}

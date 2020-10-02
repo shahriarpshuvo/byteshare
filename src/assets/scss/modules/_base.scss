@@ -1,0 +1,19 @@
+* {
+  font-family: $font-text, -apple-system, BlinkMacSystemFont, 'Arial', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.4rem;
+  font-weight: $font-regular;
+  background-color: $color-bg;
+}
