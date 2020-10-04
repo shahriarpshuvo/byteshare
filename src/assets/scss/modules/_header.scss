@@ -1,23 +1,25 @@
 .header {
-  margin: 2.5rem 0;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   &__logo {
     a {
       display: flex;
       text-decoration: none;
     }
     img {
-      margin-right: 0.5rem;
+      margin-right: 1rem;
       width: 2.6rem;
     }
 
-    a > h1 {
-      font-family: $font-heading;
+    & a > h1 {
+      //font-family: $font-heading;
       font-size: 2.3rem;
       color: $color-text;
+      font-weight: $font-black;
+      letter-spacing: 0.5px;
     }
   }
 }

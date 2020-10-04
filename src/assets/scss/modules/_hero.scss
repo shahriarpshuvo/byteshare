@@ -1,6 +1,22 @@
-.hero{
-  margin: 3rem 0;
-  &__title{
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    flex-basis: 60%;
+  }
+
+  &__right {
+    flex-basis: 35%;
+  }
+
+  &__title {
     font-family: $font-heading;
+    font-size: 3.6rem;
+  }
+
+  &__gif {
+    width: 100%;
   }
 }

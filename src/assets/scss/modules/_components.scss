@@ -1,22 +1,33 @@
-.button{
+.button {
   cursor: pointer;
   display: inline-block;
-  padding: 1.2rem 3.5rem;
+  padding: 0.8rem 2rem;
   color: $color-bg;
   font-weight: $font-bold;
   text-decoration: none;
   border-radius: 5px;
-  transition: opacity .3s ease-in;
-}
+  border: 3px solid;
+  transition: opacity 0.3s ease-in;
+  display: inline-flex;
+  align-items: bottom;
 
-.button:hover{
-  opacity: .95;
-}
+  &:hover {
+    opacity: 0.95;
+  }
 
-.button--main{
-  background: $color-main;
-}
+  &--main {
+    background: $color-main;
+    border-color: $color-text;
+  }
 
-.button--sub{
-  background: $color-text;
+  &--sub {
+    background: $color-text;
+    border-color: $color-main;
+  }
+
+  & > svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+  }
 }

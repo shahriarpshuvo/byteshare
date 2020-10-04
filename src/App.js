@@ -1,18 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import UploadArea from './components/UploadArea';
+import Home from './components/Home';
 import Container from './components/Container';
 import './assets/scss/App.scss';
 
 const App = () => {
-
   return (
     <>
       <Container>
         <Header />
-        <Hero />
-        <UploadArea />
+        <Home />
       </Container>
     </>
   );

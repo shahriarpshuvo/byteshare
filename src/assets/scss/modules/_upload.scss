@@ -1,21 +1,31 @@
-.upload-area{
+.upload-area {
   width: 100%;
-  height: 30vh;
-  background: $color-white;
-  margin: 3rem 0;
+  height: 25vh;
+  background: rgba($color-white, 0.9);
+  margin: 5rem 0;
   box-shadow: 3px 3px 5rem #00000010;
   border-radius: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 2.5px dashed $color-main;
-  
-  &__title{
+  padding-left: 5rem;
+  border: 4px dashed $color-main;
+
+  & > svg {
+    width: 6rem;
+    height: 6rem;
+    fill: $color-light;
+    margin-right: 3rem;
+  }
+
+  &__text > * {
     margin: 0;
   }
-  
-  &__subtitle{
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
     color: $color-gray;
   }
 }
