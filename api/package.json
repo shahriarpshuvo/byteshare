@@ -4,6 +4,7 @@
   "description": "ByteShare allows you to upload file and give you a shareable link for download the file within the next 24 hrs.",
   "main": "app.js",
   "scripts": {
+    "start": "node app",
     "server": "nodemon app"
   },
   "repository": {
@@ -18,7 +19,17 @@
   "homepage": "https://github.com/Mr-spShuvo/byteshare#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.7"
+    "mongoose": "^5.10.7",
+    "multer": "^1.4.2",
+    "nanoid": "^3.1.12",
+    "nodemailer": "^6.4.13"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2"
   }
 }
