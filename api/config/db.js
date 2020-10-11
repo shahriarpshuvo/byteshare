@@ -1,3 +1,4 @@
+const debug = require('debug')('app:db');
 const mongoose = require('mongoose');
 
 const connectDatabase = () => {
@@ -9,10 +10,8 @@ const connectDatabase = () => {
   });
 
   const db = mongoose.connection;
-  db.once('open', () => console.log('📦 Connected to Database'));
-  db.on('error', err =>
-    console.error('🔴 Error while connect to Database', err)
-  );
+  db.once('open', () => debug('📦 Connected to Database'));
+  db.on('error', err => debug('🔴 Error while connect to Database', err));
 };
 
 module.exports = { connectDatabase };

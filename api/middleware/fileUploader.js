@@ -2,7 +2,7 @@ const multer = require('multer');
 const path = require('path');
 const nanoid = require('nanoid').nanoid();
 
-const fileUploader = (req, res, next) => {
+const FileUploader = (req, res, next) => {
   const storage = multer.diskStorage({
     destination: (req, file, cb) => cb(null, './uploads'),
     filename: (req, file, cb) => {
@@ -22,4 +22,4 @@ const fileUploader = (req, res, next) => {
   });
 };
 
-module.exports = fileUploader;
+module.exports = FileUploader;
