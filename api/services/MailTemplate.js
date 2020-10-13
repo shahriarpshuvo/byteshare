@@ -230,12 +230,11 @@ module.exports = ({ clientUrl, logoUrl, fileSize, fileValidity, downloadUrl, mai
                 "
                 class="paragraph"
               >
-                You've received a file link on <a href="${clientUrl}">ByteShare.</a>
+                You've received a file link on <a href="${clientUrl}" rel="nofollow">byteShare.</a>
                 Go ahead and download your file from the link below.
                 <br />
                 <span style="color: #1d5ea1; font-weight: bold">FileSize:</span> ${fileSize} &#10022;
-                <span style="color: #1d5ea1; font-weight: bold">Validity:</span>
-                ${fileValidity}
+                <span style="color: #1d5ea1; font-weight: bold">Validity:</span> 24 Hrs - <span style="color:#757575; font-size: 14px;">(${fileValidity})</span>
               </td>
             </tr>
             <tr>
@@ -255,7 +254,6 @@ module.exports = ({ clientUrl, logoUrl, fileSize, fileValidity, downloadUrl, mai
                 "
                 class="button"
               >
-                <a href="https://github.com/konsav/email-templates/" target="_blank" style="text-decoration: underline">
                   <table
                     border="0"
                     cellpadding="0"
@@ -288,6 +286,7 @@ module.exports = ({ clientUrl, logoUrl, fileSize, fileValidity, downloadUrl, mai
                             font-weight: 400;
                             line-height: 120%;
                           "
+                          rel="nofollow"
                           href="${downloadUrl}"
                         >
                           Download File
@@ -343,6 +342,7 @@ module.exports = ({ clientUrl, logoUrl, fileSize, fileValidity, downloadUrl, mai
                 <a
                   href="${clientUrl}"
                   target="_blank"
+                  rel="nofollow"
                   style="
                     text-decoration: underline;
                     color: #313163;
