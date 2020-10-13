@@ -17,6 +17,8 @@ app.get('/', (req, res) => {
   res.status(200).send('Welcome to byteShare Api.');
 });
 
+app.get('/cron', require('./services/FileCleaner').clean);
+
 app.use('/api/files', require('./routes/files'));
 app.use('/send', require('./routes/send'));
 app.use('/download', require('./routes/download'));

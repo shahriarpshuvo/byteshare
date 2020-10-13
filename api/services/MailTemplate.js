@@ -230,11 +230,11 @@ module.exports = ({ clientUrl, logoUrl, fileSize, fileValidity, downloadUrl, mai
                 "
                 class="paragraph"
               >
-                You've received a file link on <a href="${clientUrl}" rel="nofollow">byteShare.</a>
+                You've received a file link on <a href="${clientUrl}" rel="nofollow">byteShare</a>.
                 Go ahead and download your file from the link below.
                 <br />
                 <span style="color: #1d5ea1; font-weight: bold">FileSize:</span> ${fileSize} &#10022;
-                <span style="color: #1d5ea1; font-weight: bold">Validity:</span> 24 Hrs - <span style="color:#757575; font-size: 14px;">(${fileValidity})</span>
+                <span style="color: #1d5ea1; font-weight: bold">Validity:</span> 24 Hrs <span style="color:#757575; font-size: 14px;">(${fileValidity})</span>
               </td>
             </tr>
             <tr>

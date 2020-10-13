@@ -27,7 +27,7 @@ const send = async (req, res) => {
     let leftHrs = parseInt(((validity - Date.now()) / hrs).toFixed(2));
     if (leftHrs < 0) return 'Expired!';
     if (leftHrs === 0) return 'Less Than 1 Hr Left';
-    return `${leftHrs} Hr Left`;
+    return `${leftHrs} Hrs Left`;
   }
 
   const fileSize = getFileSize(file.size);

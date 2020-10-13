@@ -9,6 +9,9 @@ node_modules/
 # production
 /build
 /uploads/**
+!uploads/.gitkeep
+
+.openode
 
 # misc
 .DS_Store

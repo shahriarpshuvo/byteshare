@@ -9,6 +9,7 @@ const FileUploader = (req, res, next) => {
       cb(null, `${file.originalname.split('.')[0]}-${nanoid}${path.extname(file.originalname)}`);
     }
   });
+
   const upload = multer({
     storage,
     limits: {
