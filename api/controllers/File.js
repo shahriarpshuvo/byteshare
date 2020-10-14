@@ -13,9 +13,7 @@ const saveFile = async (req, res) => {
     size,
     link: nanoid()
   }).save();
-  res
-    .status(200)
-    .json({ success: 'File uploaded Successfully', link: `${process.env.PUBLIC_URL}/api/files/${file.link}` });
+  res.status(200).json({ success: 'File uploaded Successfully', link: file.link });
 };
 
 const getFile = async (req, res) => {
