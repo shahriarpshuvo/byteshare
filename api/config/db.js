@@ -1,4 +1,3 @@
-require('dotenv').config();
 const debug = require('debug')('app:db');
 const mongoose = require('mongoose');
 
