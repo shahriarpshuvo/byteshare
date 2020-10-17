@@ -1,0 +1,63 @@
+.progress-bar {
+  box-shadow: 3px 3px 5rem #00000010;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: $color-white;
+  margin: 3rem 0;
+  padding: 1rem;
+  z-index: 0;
+
+  &__box {
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+
+    & > * {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__percentage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span:first-child {
+      color: $color-gray;
+    }
+    & span:last-child {
+      font-weight: $font-bold;
+      color: $color-main;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__filename {
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: $color-main;
+    font-size: 1.65rem;
+  }
+
+  &__bg-indicator {
+    content: '';
+    z-index: -1;
+    border-radius: 1rem;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-bg;
+  }
+
+  &__indicator {
+    width: 10%;
+    height: 5px;
+    background-color: $color-main;
+    border-radius: 5px;
+  }
+}

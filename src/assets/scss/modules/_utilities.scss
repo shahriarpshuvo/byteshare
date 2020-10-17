@@ -1,4 +1,14 @@
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
+}
+
+@keyframes anim-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.anim-rotate {
+  animation: anim-rotate 1s linear infinite;
 }

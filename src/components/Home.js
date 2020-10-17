@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="hero">
       <div className="hero__left">
-        <h1 class="hero__title">
+        <h1 className="hero__title">
           Quick Upload & <br /> Get Shareable Link.
         </h1>
         <UploadArea />

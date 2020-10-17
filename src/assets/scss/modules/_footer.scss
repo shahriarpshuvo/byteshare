@@ -1,0 +1,17 @@
+.footer {
+  text-align: right;
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    color: $color-main;
+  }
+}
