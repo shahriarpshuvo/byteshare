@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { ToastContainer } from 'react-toastify';
 
 import './assets/scss/App.scss';
-import { getFile, sendMail } from './config/api';
 
 import Header from './components/Header';
 import Home from './components/Home';
@@ -9,16 +9,6 @@ import Footer from './components/Footer';
 import Container from './components/Container';
 
 const App = () => {
-  const [fileInfo, setFileInfo] = useState('');
-
-  useEffect(() => {
-    const apiCall = async () => {
-      const data = await getFile('C9flX3Kl90');
-      if (!data.error) setFileInfo(data);
-    };
-    //apiCall();
-  }, []);
-
   return (
     <>
       <Container>
@@ -26,6 +16,15 @@ const App = () => {
         <Home />
         <Footer />
       </Container>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 };

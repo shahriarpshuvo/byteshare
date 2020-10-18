@@ -6,10 +6,14 @@ const Footer = () => {
       <p>Made with React + Nodejs (Express)</p>
       <p>
         &copy;&nbsp;
-        <a href="https://spshuvo.com/" target="_blank">
+        <a href="https://spshuvo.com/" target="_blank" rel="noopener noreferrer">
           Mr.spShuvo
         </a>
-        . Available on <a href="https://github.com/Mr-spShuvo/byteshare">Github</a>.
+        . Available on{' '}
+        <a href="https://github.com/Mr-spShuvo/byteshare" target="_blank" rel="noopener noreferrer">
+          Github
+        </a>
+        .
       </p>
     </div>
   );

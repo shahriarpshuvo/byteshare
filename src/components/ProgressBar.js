@@ -7,11 +7,14 @@ const ProgressBar = ({ loadingPercentage, filename, uploadSuccess }) => {
       <div className="progress-bar__box">
         <div className="progress-bar__bg-indicator" style={{ width: `${loadingPercentage}%` }}></div>
         <div className="progress-bar__percentage">
-          <span>Uploading...</span>{' '}
           <span>
-            {loadingPercentage}%{' '}
-            <ImSpinner2 className="anim-rotate" style={{ display: uploadSuccess ? 'none' : 'inline-block' }} />
+            <ImSpinner2
+              className="progress-bar__spinner anim-rotate"
+              style={{ display: uploadSuccess ? 'none' : 'inline-block' }}
+            />
+            Uploading...
           </span>
+          <span>{loadingPercentage}%</span>
         </div>
         <p className="progress-bar__filename">{filename}</p>
         <div className="progress-bar__indicator" style={{ width: `${loadingPercentage}%` }}></div>

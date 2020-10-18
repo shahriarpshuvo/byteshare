@@ -20,6 +20,11 @@
     }
   }
 
+  &__spinner {
+    fill: $color-main;
+    margin-right: 0.5rem;
+  }
+
   &__percentage {
     display: flex;
     justify-content: space-between;

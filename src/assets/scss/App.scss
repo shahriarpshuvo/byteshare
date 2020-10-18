@@ -9,3 +9,7 @@
 @import './modules/linkbox';
 @import './modules/mailbox';
 @import './modules/footer';
+
+// React Toastify
+@import 'react-toastify/scss/main';
+@import './modules/toastify-custom';

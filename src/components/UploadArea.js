@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { BsCloudUpload } from 'react-icons/bs';
 
+import { toast } from 'react-toastify';
+
 import { submitFile } from '../config/api';
 import ProgressBar from './ProgressBar';
 import LinkBox from './LinkBox';
@@ -26,8 +28,11 @@ const UploadArea = () => {
         const data = new FormData();
         data.append('uploadFile', file);
         const response = await submitFile(data, config);
-        setUploadRes(response);
-        console.log(response);
+
+        if (response.success) {
+          toast('File Uploaded Successfully!');
+          setUploadRes(response);
+        } else toast(response);
       }
     };
     api();
@@ -47,8 +52,8 @@ const UploadArea = () => {
   };
 
   const handleFiles = files => {
-    if (files.length > 1) return alert('Please upload one file at a time.');
-    if (parseFloat(files[0].size / (1024 * 1024)) >= 100) return alert('File size must be less than < 100 MB.');
+    if (files.length > 1) return toast.error('Please upload one file at a time.');
+    if (parseFloat(files[0].size / (1024 * 1024)) >= 100) return toast('File size must be less than < 100 MB.');
     setFile(files[0]);
     setFilename(files[0].name);
     setLoading(true);
