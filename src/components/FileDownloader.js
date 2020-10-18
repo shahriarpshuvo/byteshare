@@ -21,7 +21,7 @@ const FileDownloader = () => {
       setFound(true);
     };
     api();
-  }, []);
+  }, [id]);
 
   return (
     <>
