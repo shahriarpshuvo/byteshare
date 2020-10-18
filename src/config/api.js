@@ -18,7 +18,7 @@ export const getFile = async id => {
     return response.data;
   } catch (error) {
     if (error.response.data) return error.response.data;
-    else return error.response;
+    return error;
   }
 };
 

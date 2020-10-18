@@ -1,0 +1,13 @@
+.page-loader {
+  width: 100%;
+  height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    fill: $color-main;
+  }
+}

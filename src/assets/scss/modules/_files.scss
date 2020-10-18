@@ -1,0 +1,61 @@
+.files {
+  width: 100%;
+  height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 60rem;
+    max-width: 60%;
+    background: rgba($color-white, 0.9);
+    margin: 5rem 0;
+    box-shadow: 3px 3px 5rem #00000010;
+    border-radius: 1rem;
+    padding: 5rem;
+    text-align: center;
+  }
+
+  &__notfound {
+    &--icon {
+      width: 8rem;
+      height: 8rem;
+      fill: $color-gray;
+    }
+
+    &--title {
+      margin: 0;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__icon {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__found {
+    & > * {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 3rem;
+  }
+
+  &__filename {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: $font-bold;
+    font-size: 1.6rem;
+    color: $color-main;
+  }
+  &__info {
+    color: $color-gray;
+  }
+
+  &__download {
+    margin-top: 2rem;
+  }
+}

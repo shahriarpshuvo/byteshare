@@ -7,7 +7,7 @@
   text-decoration: none;
   border-radius: 5px;
   border: 3px solid;
-  transition: opacity 0.3s ease-in;
+  transition: all 0.3s ease-in;
   display: inline-flex;
   align-items: bottom;
 
@@ -21,8 +21,14 @@
   }
 
   &--sub {
-    background: $color-text;
+    background: $color-bg;
+    color: $color-main;
     border-color: $color-main;
+
+    &:hover {
+      background: $color-main;
+      color: $color-white;
+    }
   }
 
   & > svg {
