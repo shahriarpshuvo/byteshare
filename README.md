@@ -1,6 +1,8 @@
-<div style="text-align:center">
-<img src="./public/logo.png" style="width: 40px;">
-<h2 style="margin-top:10px; padding-bottom: 10px">byteShare<br><span style="font-size: 14px; ">Quick File Share</span></h2>
+<div align="center">
+  <img src="./public/logo.png" width="25%">
+  <h1>
+    byteShare
+  </h1>
 </div>
 
 **byteShare** allows you to upload file and give you a shareable link for download the file within the next 24 hrs.
