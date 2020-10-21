@@ -33,6 +33,7 @@ const MailBox = ({ link }) => {
   return (
     <div className="mailbox">
       <p className="mailbox__instruction">Or, Send Link Through Mail</p>
+      <p className="mailbox__info">Files get deleted automatically after 24hrs.</p>
       <form className="mailbox__form" onSubmit={onSummitHandler}>
         <div className="mailbox__inputs">
           <input

@@ -1,0 +1,27 @@
+@mixin media-queries($breakpoints) {
+  @if $breakpoints==atSmall {
+    @media only screen and (min-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoints==atMedium {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoints==atMediumLarge {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  } @else if $breakpoints==atLarge {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoints==atLarger {
+    @media only screen and (min-width: 1920px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $breakpoints) {
+      @content;
+    }
+  }
+}

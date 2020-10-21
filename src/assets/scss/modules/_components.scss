@@ -31,6 +31,17 @@
     }
   }
 
+  &--outline {
+    background: $color-white;
+    color: $color-text;
+    border-color: $color-text;
+
+    &:hover {
+      background: $color-text;
+      color: $color-white;
+    }
+  }
+
   & > svg {
     width: 1.8rem;
     height: 1.8rem;

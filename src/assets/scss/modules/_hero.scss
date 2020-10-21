@@ -1,7 +1,41 @@
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  @include media-queries(atMediumLarge) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  flex-direction: column-reverse;
+  &__gif {
+    margin-top: 3rem;
+    width: 80%;
+
+    @include media-queries(atMedium) {
+      width: 60%;
+      margin-top: 0;
+    }
+
+    @include media-queries(atMediumLarge) {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 2.4rem;
+    text-align: center;
+
+    @include media-queries(atMedium) {
+      font-size: 2.8rem;
+    }
+    @include media-queries(atMediumLarge) {
+      font-size: 3.6rem;
+      text-align: left;
+    }
+  }
 
   &__left {
     flex-basis: 60%;
@@ -9,14 +43,6 @@
 
   &__right {
     flex-basis: 35%;
-  }
-
-  &__title {
-    font-family: $font-heading;
-    font-size: 3.6rem;
-  }
-
-  &__gif {
-    width: 100%;
+    text-align: center;
   }
 }

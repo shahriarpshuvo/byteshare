@@ -4,6 +4,28 @@
   justify-content: space-between;
   align-items: center;
 
+  &__c2a{
+    .button{
+      font-size: 0;
+
+      & svg{
+        margin: 0
+      }
+    }
+
+     @include media-queries(atMedium){
+        .button{
+      font-size: 1.3rem;
+
+      & svg{
+        margin-right: 1rem;
+      }
+    }
+     }
+  }
+
+ 
+
   &__logo {
     a {
       display: flex;
@@ -15,7 +37,6 @@
     }
 
     & a > h1 {
-      //font-family: $font-heading;
       font-size: 2.3rem;
       color: $color-text;
       font-weight: $font-black;

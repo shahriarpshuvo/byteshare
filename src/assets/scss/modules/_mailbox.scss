@@ -4,15 +4,28 @@
   &__instruction {
     font-size: 1.3rem;
     text-transform: uppercase;
+    // color: $color-gray;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__info {
+    font-size: 1.2rem;
     color: $color-gray;
     padding: 0;
     margin: 0;
   }
 
   &__inputs {
-    margin: 1rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @include media-queries(atMediumLarge) {
+      flex-direction: row;
+    }
 
     & input {
       flex-basis: 48%;
@@ -21,6 +34,12 @@
       padding-bottom: 0.5rem;
       border-bottom: 2px solid $color-text;
       background-color: transparent;
+
+      margin: 1rem 0;
+
+      @include media-queries(atMediumLarge) {
+        margin: 0;
+      }
     }
   }
 

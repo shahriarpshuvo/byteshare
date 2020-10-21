@@ -23,6 +23,14 @@ const FileDownloader = () => {
     api();
   }, [id]);
 
+  const filesizeFormatter = filesize => {
+    const formatter = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+    return formatter.format(filesize / (1024 * 1024));
+  };
+
   return (
     <>
       {loader && (
@@ -45,11 +53,11 @@ const FileDownloader = () => {
           ) : (
             <div className="files__found">
               <ImDownload className="files__icon" />
-              <h2 className="files__title">Your file is ready to download</h2>
+              <h2 className="files__title">Your file is ready to download!</h2>
               <p className="files__info">Files get deleted automatically after 24hrs.</p>
               <p className="files__filename">{data.filename}</p>
               <p className="files__filesize">
-                {data.size / (1024 * 1024) < 1 ? 'Less than <  1' : data.size / (1024 * 1024)} MB
+                {data.size / (1024 * 1024) < 1 ? 'Less than <  1' : filesizeFormatter(data.size)} MB
               </p>
               <a
                 href={`${process.env.REACT_APP_API_URL}/download/${id}`}

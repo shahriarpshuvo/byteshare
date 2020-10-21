@@ -59,6 +59,11 @@ const UploadArea = () => {
     setLoading(true);
   };
 
+  const uploadAgain = () => {
+    setLoading(false);
+    setUploadRes({});
+  };
+
   return (
     <>
       {!loading && (
@@ -89,8 +94,14 @@ const UploadArea = () => {
       )}
 
       {loading && (
-        <ProgressBar loadingPercentage={loadingPercentage} filename={filename} uploadSuccess={uploadRes.success} />
+        <ProgressBar
+          loadingPercentage={loadingPercentage}
+          filename={filename}
+          uploadSuccess={uploadRes.success}
+          uploadAgain={uploadAgain}
+        />
       )}
+
       {uploadRes.link && <LinkBox link={uploadRes.link} />}
     </>
   );

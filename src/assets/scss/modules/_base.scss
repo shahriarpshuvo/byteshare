@@ -4,7 +4,19 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%; //8px
+
+  @include media-queries(atSmall) {
+    font-size: 56.25%; //9px
+  }
+
+  @include media-queries(atLarge) {
+    font-size: 62.5%; //10px
+  }
+
+  @include media-queries(atLarger) {
+    font-size: 75%; //12px
+  }
 }
 
 html,

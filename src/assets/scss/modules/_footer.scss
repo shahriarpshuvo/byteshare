@@ -1,10 +1,18 @@
+body {
+  position: relative;
+}
 .footer {
-  text-align: right;
-  position: fixed;
-  right: 3rem;
-  bottom: 3rem;
+  text-align: center;
+  padding: 1rem 0;
   font-size: 1.3rem;
   line-height: 1.5;
+
+  @include media-queries(atMediumLarge) {
+    position: fixed;
+    text-align: right;
+    right: 3rem;
+    bottom: 3rem;
+  }
 
   p {
     padding: 0;

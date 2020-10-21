@@ -38,6 +38,16 @@
       color: $color-main;
       font-size: 1.6rem;
     }
+
+    & button.button {
+      padding: 0.5rem 2rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+
+      svg {
+        margin-right: 0.3rem;
+      }
+    }
   }
 
   &__filename {

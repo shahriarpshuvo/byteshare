@@ -12,11 +12,16 @@ const send = async (req, res) => {
   const { CLIENT_URL, LOGO_URL } = process.env;
 
   function getFileSize(fileSize) {
+    const formatter = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+
     const fileSizeKB = Math.round(fileSize / 1024);
     if (fileSizeKB < 1000) return `${fileSizeKB} KB`;
     else {
-      const fileSizeMB = fileSizeKB / 1000;
-      return `${fileSizeMB} MB`;
+      const fileSizeMB = fileSizeKB / 1024;
+      return `${formatter.format(fileSizeMB)} MB`;
     }
   }
 
