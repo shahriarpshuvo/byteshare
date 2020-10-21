@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/logo.png" width="25%">
+  <img src="./public/logo.png" width="15%">
   <h1>
     byteShare
   </h1>
