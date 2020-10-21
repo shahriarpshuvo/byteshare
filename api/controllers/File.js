@@ -2,9 +2,8 @@ const { customRandom, urlAlphabet, random } = require('nanoid');
 
 const File = require('../models/File');
 
-const nanoid = customRandom(urlAlphabet, 10, random);
-
 const saveFile = async (req, res) => {
+  const nanoid = customRandom(urlAlphabet, 10, random);
   if (!req.file) return res.status(400).json({ error: 'Upload must be valid.' });
   const { filename, path, size } = req.file;
   const file = await new File({
