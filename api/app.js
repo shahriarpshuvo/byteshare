@@ -11,12 +11,12 @@ db.connectDatabase();
 // Middleware
 app.use(express.json());
 app.use(cors());
+app.use(express.static('public'));
 
 // Routes
 app.get('/', (req, res) => {
   res.status(200).send('Welcome to byteShare Api.');
 });
-
 app.get('/cron', require('./services/FileCleaner').clean);
 
 app.use('/api/files', require('./routes/files'));

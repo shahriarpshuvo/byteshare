@@ -40,7 +40,6 @@ const send = async (req, res) => {
 
   try {
     Mailer.sendMail({
-      from: mailFrom,
       to: mailTo,
       subject: `byteShare - You've received a file from ${mailFrom}`,
       html: template({
